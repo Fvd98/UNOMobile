@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".6"
+        app:srcCompat="@drawable/uno_logo" />
+
+    <EditText
+        android:id="@+id/CotxtNomUtil"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".125"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="Nom d'utilisateur"
+        android:inputType="textCapCharacters"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/CotxtMDP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".125"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/CoErreur"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".025"
+        android:text="* nom d'utilisateur ou mot de passe invalide"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/CocbRappeller"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:backgroundTint="@android:color/background_light"
+        android:buttonTint="@android:color/background_light"
+        android:text="Se souvenir de moi"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/CobtnConnexion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".075"
+        android:background="@drawable/backgroundbutton"
+        android:enabled="true"
+        android:text="CONNEXION"
+        android:textColor="@color/colorAccent" />
+</LinearLayout>

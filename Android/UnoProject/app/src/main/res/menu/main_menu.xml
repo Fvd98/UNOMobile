@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.marika.unoproject.Activities.UNO_Gameroom">
+
+    <item
+        android:id="@+id/profil"
+        android:contentDescription="Profil"
+        android:icon="@drawable/ic_account_circle_white_24dp"
+        android:orderInCategory="100"
+        android:title="Profil"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/aide"
+        android:orderInCategory="100"
+        android:title="Aide"
+        android:icon="@drawable/ic_help_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nouvelle_partie"
+        android:orderInCategory="100"
+        android:title="Nouvelle partie"
+        android:icon="@drawable/inscription_logo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sauvegarder_partie"
+        android:orderInCategory="100"
+        android:title="Sauvegarder partie"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/charger_partie"
+        android:orderInCategory="100"
+        android:title="Charger partie"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/deconnexion"
+        android:orderInCategory="100"
+        android:title="Déconnexion"
+        android:icon="@drawable/power"
+        app:showAsAction="always" />
+
+
+</menu>
